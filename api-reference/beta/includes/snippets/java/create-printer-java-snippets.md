@@ -23,7 +23,7 @@ certificateSigningRequest.transportKey = "{sampleTransportKey}";
 
 
 graphClient.print().printers()
-	.create(Printer)CreateParameterSet
+	.create(PrinterCreateParameterSet
 		.newBuilder()
 		.withDisplayName(displayName)
 		.withManufacturer(manufacturer)

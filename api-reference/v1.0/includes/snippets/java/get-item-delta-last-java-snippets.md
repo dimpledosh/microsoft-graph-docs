@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 DriveItemDeltaCollectionPage delta = graphClient.me().drive().root()
-	.delta(DriveItem)DeltaParameterSet
+	.delta(DriveItemDeltaParameterSet
 		.newBuilder()
 		.withToken("1230919asd190410jlka")
 		.build())

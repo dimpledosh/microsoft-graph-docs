@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ReportRootGetCredentialUsageSummaryCollectionPage getCredentialUsageSummary = graphClient.reports()
-	.getCredentialUsageSummary(CredentialUsageSummary)GetCredentialUsageSummaryParameterSet
+	.getCredentialUsageSummary(CredentialUsageSummaryGetCredentialUsageSummaryParameterSet
 		.newBuilder()
 		.withPeriod("D30")
 		.build())

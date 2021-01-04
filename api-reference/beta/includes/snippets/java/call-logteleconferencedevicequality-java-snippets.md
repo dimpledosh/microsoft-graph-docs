@@ -85,7 +85,7 @@ mediaQualityListList.add(mediaQualityList2);
 quality.mediaQualityList = mediaQualityListList;
 
 graphClient.communications().calls()
-	.logTeleconferenceDeviceQuality(Call)LogTeleconferenceDeviceQualityParameterSet
+	.logTeleconferenceDeviceQuality(CallLogTeleconferenceDeviceQualityParameterSet
 		.newBuilder()
 		.withQuality(quality)
 		.build())

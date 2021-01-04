@@ -32,7 +32,7 @@ alertCollectionResponse.value = valueList;
 AlertCollectionPage alertCollectionPage = new AlertCollectionPage(alertCollectionResponse, null);
 
 graphClient.security().alerts()
-	.updateAlerts(Alert)UpdateAlertsParameterSet
+	.updateAlerts(AlertUpdateAlertsParameterSet
 		.newBuilder()
 		.withValue(valueList)
 		.build())

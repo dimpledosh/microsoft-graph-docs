@@ -25,7 +25,7 @@ classificationResults.confidenceLevel = 75;
 classificationResultsList.add(classificationResults);
 
 graphClient.informationProtection().policy().labels()
-	.evaluateClassificationResults(InformationProtectionAction)EvaluateClassificationResultsParameterSet
+	.evaluateClassificationResults(InformationProtectionActionEvaluateClassificationResultsParameterSet
 		.newBuilder()
 		.withContentInfo(contentInfo)
 		.withClassificationResults(classificationResultsList)

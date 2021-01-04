@@ -54,7 +54,7 @@ tiIndicatorCollectionResponse.value = valueList;
 TiIndicatorCollectionPage tiIndicatorCollectionPage = new TiIndicatorCollectionPage(tiIndicatorCollectionResponse, null);
 
 graphClient.security().tiIndicators()
-	.submitTiIndicators(TiIndicator)SubmitTiIndicatorsParameterSet
+	.submitTiIndicators(TiIndicatorSubmitTiIndicatorsParameterSet
 		.newBuilder()
 		.withValue(valueList)
 		.build())

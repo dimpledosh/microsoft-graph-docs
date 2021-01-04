@@ -11,7 +11,7 @@ groupIdsList.add("groupId-value1");
 groupIdsList.add("groupId-value2");
 
 graphClient.contacts("{id}")
-	.checkMemberGroups(String)CheckMemberGroupsParameterSet
+	.checkMemberGroups(StringCheckMemberGroupsParameterSet
 		.newBuilder()
 		.withGroupIds(groupIdsList)
 		.build())

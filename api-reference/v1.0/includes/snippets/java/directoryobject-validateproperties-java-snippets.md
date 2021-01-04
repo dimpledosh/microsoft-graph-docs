@@ -15,7 +15,7 @@ String mailNickname = "Myprefix_test_mysuffix";
 UUID onBehalfOfUserId = UUID.fromString("onBehalfOfUserId-value");
 
 graphClient.directoryObjects()
-	.validateProperties(DirectoryObject)ValidatePropertiesParameterSet
+	.validateProperties(DirectoryObjectValidatePropertiesParameterSet
 		.newBuilder()
 		.withEntityType(entityType)
 		.withDisplayName(displayName)

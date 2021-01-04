@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 ReportRootGetRelyingPartyDetailedSummaryCollectionPage getRelyingPartyDetailedSummary = graphClient.reports()
-	.getRelyingPartyDetailedSummary(RelyingPartyDetailedSummary)GetRelyingPartyDetailedSummaryParameterSet
+	.getRelyingPartyDetailedSummary(RelyingPartyDetailedSummaryGetRelyingPartyDetailedSummaryParameterSet
 		.newBuilder()
 		.withPeriod("period_value")
 		.build())

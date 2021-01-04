@@ -25,7 +25,7 @@ conversationMemberCollectionResponse.value = valuesList;
 ConversationMemberCollectionPage conversationMemberCollectionPage = new ConversationMemberCollectionPage(conversationMemberCollectionResponse, null);
 
 graphClient.teams("e4183b04-c9a2-417c-bde4-70e3ee46a6dc").members()
-	.add(ActionResultPart)AddParameterSet
+	.add(ActionResultPartAddParameterSet
 		.newBuilder()
 		.withValues(valuesList)
 		.build())

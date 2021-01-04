@@ -27,7 +27,7 @@ requests.fields = fieldsList;
 requestsList.add(requests);
 
 graphClient.search()
-	.query(SearchResponse)QueryParameterSet
+	.query(SearchResponseQueryParameterSet
 		.newBuilder()
 		.withRequests(requestsList)
 		.build())
