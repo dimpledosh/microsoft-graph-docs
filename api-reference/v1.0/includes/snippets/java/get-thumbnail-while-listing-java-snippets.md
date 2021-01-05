@@ -6,9 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IDriveItemCollectionPage children = graphClient.me().drive().items("{item-id}").children()
+Content children?$expand=thumbnails = graphClient.me().drive().items("{item-id}").children?$expand=thumbnails()
 	.buildRequest()
-	.expand("thumbnails")
 	.get();
 
 ```

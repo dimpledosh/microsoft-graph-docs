@@ -6,13 +6,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var queryOptions = new List<QueryOption>()
-{
-	new QueryOption("$skiptoken", "c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA=")
-};
-
-var delta = await graphClient.Teams["{id}"].Channels["{id}"].Messages
-	.Delta()
+var chatMessage = await graphClient.Teams["{id}"].Channels["{id}"].Messages["delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d"]
 	.Request()
 	.GetAsync();
 

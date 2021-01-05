@@ -6,10 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IChatMessageDeltaCollectionPage delta = graphClient.teams("{id}").channels("{id}").messages()
-	.delta()
+ChatMessage chatMessage = graphClient.teams("{id}").channels("{id}").messages("delta?$top=2")
 	.buildRequest()
-	.top(2)
 	.get();
 
 ```

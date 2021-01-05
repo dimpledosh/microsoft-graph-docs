@@ -6,11 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-LinkedList<Option> requestOptions = new LinkedList<Option>();
-requestOptions.add(new QueryOption("format", "{format}"));
-
-InputStream stream = graphClient.customRequest("/me/drive/items/{item-id}/content", InputStream.class)
-	.buildRequest( requestOptions )
+Content content?format={format} = graphClient.me().drive().items("{item-id}").content?format={format}()
+	.buildRequest()
 	.get();
 
 ```

@@ -6,10 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-IChatMessageDeltaCollectionPage delta = graphClient.teams("{id}").channels("{id}").messages()
-	.delta()
+ChatMessage chatMessage = graphClient.teams("{id}").channels("{id}").messages("delta?$skiptoken=c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA%3d")
 	.buildRequest()
-	.skipToken("c3RhcnRUaW1lPTE1NTEyMTUzMjU0NTkmcGFnZVNpemU9MjA=")
 	.get();
 
 ```
