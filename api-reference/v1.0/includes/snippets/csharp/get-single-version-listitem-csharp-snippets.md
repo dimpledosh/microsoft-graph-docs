@@ -6,13 +6,8 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var queryOptions = new List<QueryOption>()
-{
-	new QueryOption("expand", "fields")
-};
-
-var listItemVersion = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"].Versions["{version-id}"]
-	.Request( queryOptions )
+var listItemVersion = await graphClient.Sites["{site-id}"].Lists["{list-id}"].Items["{item-id}"].Versions["{version-id}?expand=fields"]
+	.Request()
 	.GetAsync();
 
 ```

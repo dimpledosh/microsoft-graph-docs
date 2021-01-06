@@ -10,8 +10,7 @@ const options = {
 
 const client = Client.init(options);
 
-let res = await client.api('/teams/{id}/channels/{id}/messages/delta')
-	.top(2)
+let res = await client.api('/teams/{id}/channels/{id}/messages/delta?$top=2')
 	.get();
 
 ```

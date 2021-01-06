@@ -13,9 +13,7 @@ NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URL
 MSURLSessionDataTask *meDataTask = [httpClient dataTaskWithRequest:urlRequest 
 	completionHandler: ^(NSData *data, NSURLResponse *response, NSError *nserror) {
 
-		NSError *jsonError = nil;
-		MSCollection *collection = [[MSCollection alloc] initWithData:data error:&jsonError];
-		MSGraphThumbnailSet *thumbnailSet = [[MSGraphThumbnailSet alloc] initWithDictionary:[[collection value] objectAtIndex: 0] error:&nserror];
+		MSGraphThumbnails?select=c300x400_Crop *thumbnails?select=c300x400_Crop = [[MSGraphThumbnails?select=c300x400_Crop alloc] initWithData:data error:&nserror];
 
 }];
 
