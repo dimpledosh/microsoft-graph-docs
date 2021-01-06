@@ -12,7 +12,6 @@ requestOptions.add(new HeaderOption("Prefer", "return=minimal"));
 IUserDeltaCollectionPage delta = graphClient.users()
 	.delta()
 	.buildRequest( requestOptions )
-	.select("displayName,jobTitle,mobilePhone")
 	.get();
 
 ```

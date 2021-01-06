@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Event event = graphClient.me().events("AAMkADAGAADDdm4NAAA=")
 	.buildRequest()
-	.select("subject,body,bodyPreview,organizer,attendees,start,end,location,locations")
 	.get();
 
 ```

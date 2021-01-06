@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ITeamsAppCollectionPage teamsApps = graphClient.appCatalogs().teamsApps()
 	.buildRequest()
-	.filter("distributionMethod eq 'organization'")
 	.get();
 
 ```

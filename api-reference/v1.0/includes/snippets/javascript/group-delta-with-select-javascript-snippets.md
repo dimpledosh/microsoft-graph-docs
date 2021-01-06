@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/groups/delta')
-	.select('displayName,description,mailNickname')
 	.get();
 
 ```

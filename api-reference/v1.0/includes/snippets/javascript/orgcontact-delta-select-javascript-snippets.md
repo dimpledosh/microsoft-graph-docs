@@ -11,7 +11,6 @@ const options = {
 const client = Client.init(options);
 
 let res = await client.api('/contacts/delta')
-	.select('displayName,jobTitle,mail')
 	.get();
 
 ```

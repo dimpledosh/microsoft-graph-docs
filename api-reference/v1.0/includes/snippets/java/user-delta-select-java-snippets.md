@@ -9,7 +9,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 IUserDeltaCollectionPage delta = graphClient.users()
 	.delta()
 	.buildRequest()
-	.select("displayName,jobTitle,mobilePhone")
 	.get();
 
 ```

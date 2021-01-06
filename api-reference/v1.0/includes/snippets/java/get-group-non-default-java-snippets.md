@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Group group = graphClient.groups("b320ee12-b1cd-4cca-b648-a437be61c5cd")
 	.buildRequest()
-	.select("allowExternalSenders,autoSubscribeNewMembers,isSubscribedByMail,unseenCount")
 	.get();
 
 ```

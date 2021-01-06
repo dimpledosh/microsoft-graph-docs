@@ -8,8 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 IWorkbookTableRowCollectionPage rows = graphClient.me().drive().items("{id}").workbook().tables("{id|name}").rows()
 	.buildRequest()
-	.skip(5)
-	.top(5)
 	.get();
 
 ```

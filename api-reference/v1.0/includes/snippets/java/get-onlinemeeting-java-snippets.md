@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 IOnlineMeetingCollectionPage onlineMeetings = graphClient.communications().onlineMeetings()
 	.buildRequest()
-	.filter("VideoTeleconferenceId eq '123456789'")
 	.get();
 
 ```

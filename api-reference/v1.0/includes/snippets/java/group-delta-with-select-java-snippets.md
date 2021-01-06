@@ -9,7 +9,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 IGroupDeltaCollectionPage delta = graphClient.groups()
 	.delta()
 	.buildRequest()
-	.select("displayName,description,mailNickname")
 	.get();
 
 ```

@@ -12,7 +12,6 @@ requestOptions.add(new HeaderOption("Prefer", "return=minimal"));
 IOrgContactDeltaCollectionPage delta = graphClient.contacts()
 	.delta()
 	.buildRequest( requestOptions )
-	.select("displayName,jobTitle,mail")
 	.get();
 
 ```

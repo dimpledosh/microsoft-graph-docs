@@ -8,7 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var teamsAppInstallation = await graphClient.Teams["{id}"].InstalledApps["{id}"]
 	.Request()
-	.Expand("teamsAppDefinition")
 	.GetAsync();
 
 ```

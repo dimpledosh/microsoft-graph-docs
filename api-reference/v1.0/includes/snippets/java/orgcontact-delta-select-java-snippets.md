@@ -9,7 +9,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 IOrgContactDeltaCollectionPage delta = graphClient.contacts()
 	.delta()
 	.buildRequest()
-	.select("displayName,jobTitle,mail")
 	.get();
 
 ```

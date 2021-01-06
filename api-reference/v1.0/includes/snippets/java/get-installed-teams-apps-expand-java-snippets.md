@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 TeamsAppInstallation teamsAppInstallation = graphClient.teams("{id}").installedApps("{id}")
 	.buildRequest()
-	.expand("teamsAppDefinition")
 	.get();
 
 ```

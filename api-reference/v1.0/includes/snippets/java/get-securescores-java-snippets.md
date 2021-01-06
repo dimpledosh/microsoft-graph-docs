@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ISecureScoreCollectionPage secureScores = graphClient.security().secureScores()
 	.buildRequest()
-	.top(1)
 	.get();
 
 ```

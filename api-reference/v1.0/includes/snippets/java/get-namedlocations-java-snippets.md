@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 INamedLocationCollectionPage namedLocations = graphClient.identity().conditionalAccess().namedLocations()
 	.buildRequest()
-	.filter("microsoft.graph.countryNamedLocation/countriesAndRegions/any(c: c eq 'CA')")
 	.get();
 
 ```

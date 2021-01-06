@@ -6,8 +6,9 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var children?$expand=thumbnails = await graphClient.Me.Drive.Items["{item-id}"].Children?$expand=thumbnails
+var children = await graphClient.Me.Drive.Items["{item-id}"].Children
 	.Request()
+	.Expand("thumbnails")
 	.GetAsync();
 
 ```

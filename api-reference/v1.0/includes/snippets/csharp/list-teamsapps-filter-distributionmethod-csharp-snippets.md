@@ -8,7 +8,6 @@ GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
 var teamsApps = await graphClient.AppCatalogs.TeamsApps
 	.Request()
-	.Filter("distributionMethod eq 'organization'")
 	.GetAsync();
 
 ```

@@ -12,7 +12,6 @@ requestOptions.add(new HeaderOption("Prefer", "return=minimal"));
 IGroupDeltaCollectionPage delta = graphClient.groups()
 	.delta()
 	.buildRequest( requestOptions )
-	.select("displayName,description,mailNickname")
 	.get();
 
 ```

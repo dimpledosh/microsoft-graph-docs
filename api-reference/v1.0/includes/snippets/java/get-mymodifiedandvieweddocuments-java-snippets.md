@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 IUsedInsightCollectionPage used = graphClient.me().insights().used()
 	.buildRequest()
-	.orderBy("LastUsed/LastAccessedDateTime desc")
 	.get();
 
 ```

@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ITeamsAppCollectionPage teamsApps = graphClient.appCatalogs().teamsApps()
 	.buildRequest()
-	.filter("externalId eq 'cf1ba4c7-f94e-4d80-ba90-5594b641a8ee'")
 	.get();
 
 ```

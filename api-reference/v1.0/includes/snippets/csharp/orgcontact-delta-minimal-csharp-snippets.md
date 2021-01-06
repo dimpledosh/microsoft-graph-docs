@@ -10,7 +10,6 @@ var delta = await graphClient.Contacts
 	.Delta()
 	.Request()
 	.Header("Prefer","return=minimal")
-	.Select("displayName,jobTitle,mail")
 	.GetAsync();
 
 ```

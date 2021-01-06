@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 Message message = graphClient.me().messages("AAMkADhAAAW-VPeAAA=")
 	.buildRequest()
-	.select("internetMessageHeaders")
 	.get();
 
 ```

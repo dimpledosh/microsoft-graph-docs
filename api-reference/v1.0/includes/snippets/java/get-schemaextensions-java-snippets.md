@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ISchemaExtensionCollectionPage schemaExtensions = graphClient.schemaExtensions()
 	.buildRequest()
-	.filter("id eq 'graphlearn_test'")
 	.get();
 
 ```

@@ -8,7 +8,6 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 
 ITeamsAppCollectionPage teamsApps = graphClient.appCatalogs().teamsApps()
 	.buildRequest()
-	.filter("id eq 'b1c5353a-7aca-41b3-830f-27d5218fe0e5'")
 	.get();
 
 ```
