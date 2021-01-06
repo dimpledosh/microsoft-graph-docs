@@ -11,7 +11,7 @@ String clientContext = "clientContext-value";
 RecordingStatus status = RecordingStatus.NOT_RECORDING;
 
 graphClient.communications().calls("{id}")
-	.updateRecordingStatus(UpdateRecordingStatusOperationUpdateRecordingStatusParameterSet
+	.updateRecordingStatus(CallUpdateRecordingStatusParameterSet
 		.newBuilder()
 		.withStatus(status)
 		.withClientContext(clientContext)

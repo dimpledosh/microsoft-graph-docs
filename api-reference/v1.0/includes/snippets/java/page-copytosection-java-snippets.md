@@ -11,7 +11,7 @@ String id = "id-value";
 String groupId = "groupId-value";
 
 graphClient.me().onenote().pages("{id}")
-	.copyToSection(OnenoteOperationCopyToSectionParameterSet
+	.copyToSection(OnenotePageCopyToSectionParameterSet
 		.newBuilder()
 		.withId(id)
 		.withGroupId(groupId)

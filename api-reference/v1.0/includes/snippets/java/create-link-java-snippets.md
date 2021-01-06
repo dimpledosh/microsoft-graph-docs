@@ -13,7 +13,7 @@ String password = "ThisIsMyPrivatePassword";
 String scope = "anonymous";
 
 graphClient.me().drive().items("{item-id}")
-	.createLink(PermissionCreateLinkParameterSet
+	.createLink(DriveItemCreateLinkParameterSet
 		.newBuilder()
 		.withType(type)
 		.withScope(scope)

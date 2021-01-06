@@ -9,7 +9,7 @@ IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationPro
 Boolean securityEnabledOnly = false;
 
 graphClient.contacts("{id}")
-	.getMemberGroups(StringGetMemberGroupsParameterSet
+	.getMemberGroups(DirectoryObjectGetMemberGroupsParameterSet
 		.newBuilder()
 		.withSecurityEnabledOnly(securityEnabledOnly)
 		.build())

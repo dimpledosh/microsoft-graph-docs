@@ -12,7 +12,7 @@ attachmentItem.name = "flower";
 attachmentItem.size = 3483322L;
 
 graphClient.me().messages("AAMkADI5MAAIT3drCAAA=").attachments()
-	.createUploadSession(UploadSessionCreateUploadSessionParameterSet
+	.createUploadSession(AttachmentCreateUploadSessionParameterSet
 		.newBuilder()
 		.withAttachmentItem(attachmentItem)
 		.build())

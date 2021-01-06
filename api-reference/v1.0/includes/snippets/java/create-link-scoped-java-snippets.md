@@ -11,7 +11,7 @@ String type = "edit";
 String scope = "organization";
 
 graphClient.me().drive().items("{item-id}")
-	.createLink(PermissionCreateLinkParameterSet
+	.createLink(DriveItemCreateLinkParameterSet
 		.newBuilder()
 		.withType(type)
 		.withScope(scope)

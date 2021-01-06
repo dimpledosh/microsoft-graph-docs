@@ -10,7 +10,7 @@ PasswordCredential passwordCredential = new PasswordCredential();
 passwordCredential.displayName = "Password friendly name";
 
 graphClient.applications("{id}")
-	.addPassword(PasswordCredentialAddPasswordParameterSet
+	.addPassword(ApplicationAddPasswordParameterSet
 		.newBuilder()
 		.withPasswordCredential(passwordCredential)
 		.build())

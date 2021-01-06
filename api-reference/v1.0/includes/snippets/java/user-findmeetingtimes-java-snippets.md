@@ -53,7 +53,7 @@ boolean returnSuggestionReasons = true;
 Double minimumAttendeePercentage = 100d;
 
 graphClient.me()
-	.findMeetingTimes(MeetingTimeSuggestionsResultFindMeetingTimesParameterSet
+	.findMeetingTimes(UserFindMeetingTimesParameterSet
 		.newBuilder()
 		.withAttendees(attendeesList)
 		.withLocationConstraint(locationConstraint)

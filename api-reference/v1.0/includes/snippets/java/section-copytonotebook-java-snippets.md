@@ -13,7 +13,7 @@ String groupId = "groupId-value";
 String renameAs = "renameAs-value";
 
 graphClient.me().onenote().sections("{id}")
-	.copyToNotebook(OnenoteOperationCopyToNotebookParameterSet
+	.copyToNotebook(OnenoteSectionCopyToNotebookParameterSet
 		.newBuilder()
 		.withId(id)
 		.withGroupId(groupId)

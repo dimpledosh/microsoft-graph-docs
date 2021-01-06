@@ -15,7 +15,7 @@ ExchangeIdFormat sourceIdType = ExchangeIdFormat.REST_ID;
 ExchangeIdFormat targetIdType = ExchangeIdFormat.REST_IMMUTABLE_ENTRY_ID;
 
 graphClient.me()
-	.translateExchangeIds(ConvertIdResultTranslateExchangeIdsParameterSet
+	.translateExchangeIds(UserTranslateExchangeIdsParameterSet
 		.newBuilder()
 		.withInputIds(inputIdsList)
 		.withTargetIdType(targetIdType)

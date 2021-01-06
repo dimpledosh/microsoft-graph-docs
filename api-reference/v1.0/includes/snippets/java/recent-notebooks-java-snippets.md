@@ -7,7 +7,7 @@ description: "Automatically generated file. DO NOT MODIFY"
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
 NotebookGetRecentNotebooksCollectionPage getRecentNotebooks = graphClient.me().onenote().notebooks()
-	.getRecentNotebooks(RecentNotebookGetRecentNotebooksParameterSet
+	.getRecentNotebooks(NotebookGetRecentNotebooksParameterSet
 		.newBuilder()
 		.withIncludePersonalNotebooks(true)
 		.build())

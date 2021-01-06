@@ -33,7 +33,7 @@ stopTonesList.add("1");
 stopTonesList.add("*");
 
 graphClient.communications().calls("{id}")
-	.recordResponse(RecordOperationRecordResponseParameterSet
+	.recordResponse(CallRecordResponseParameterSet
 		.newBuilder()
 		.withPrompts(promptsList)
 		.withBargeInAllowed(bargeInAllowed)

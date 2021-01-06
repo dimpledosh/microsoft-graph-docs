@@ -12,7 +12,7 @@ workbookRangeFont.color = "#4B180E";
 workbookRangeFont.size = 26d;
 
 graphClient.me().drive().items("{id}").workbook().worksheets("{sheet-id}")
-	.range(WorkbookRangeRangeParameterSet
+	.range(WorkbookWorksheetRangeParameterSet
 		.newBuilder()
 		.withAddress("$A$1")
 		.build()).format().font()

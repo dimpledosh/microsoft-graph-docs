@@ -10,7 +10,7 @@ LinkedList<String> groupIdsList = new LinkedList<String>();
 groupIdsList.add("groupIds-value");
 
 graphClient.me()
-	.checkMemberGroups(StringCheckMemberGroupsParameterSet
+	.checkMemberGroups(DirectoryObjectCheckMemberGroupsParameterSet
 		.newBuilder()
 		.withGroupIds(groupIdsList)
 		.build())
