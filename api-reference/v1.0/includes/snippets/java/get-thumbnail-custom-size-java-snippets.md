@@ -6,8 +6,11 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 IGraphServiceClient graphClient = GraphServiceClient.builder().authenticationProvider( authProvider ).buildClient();
 
-Content thumbnails?select=c300x400_Crop = graphClient.me().drive().items("{item-id}").thumbnails?select=c300x400_Crop()
-	.buildRequest()
+LinkedList<Option> requestOptions = new LinkedList<Option>();
+requestOptions.add(new QueryOption("select", "c300x400_Crop"));
+
+IThumbnailSetCollectionPage thumbnails = graphClient.me().drive().items("{item-id}").thumbnails()
+	.buildRequest( requestOptions )
 	.get();
 
 ```
