@@ -6,8 +6,13 @@ description: "Automatically generated file. DO NOT MODIFY"
 
 GraphServiceClient graphClient = new GraphServiceClient( authProvider );
 
-var thumbnails?select=c300x400_Crop = await graphClient.Me.Drive.Items["{item-id}"].Thumbnails?select=c300x400_Crop
-	.Request()
+var queryOptions = new List<QueryOption>()
+{
+	new QueryOption("select", "c300x400_Crop")
+};
+
+var thumbnails = await graphClient.Me.Drive.Items["{item-id}"].Thumbnails
+	.Request( queryOptions )
 	.GetAsync();
 
 ```
